@@ -1,0 +1,90 @@
+.pricing {
+
+    background-color: $color-secondary;
+    padding: 15rem 0 10rem;
+    
+    @media only screen and (max-width: $bp-small) {
+        height:210vh;
+    }
+    &__card{
+    width: 26%;
+    margin: 0 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+    background-image: linear-gradient(#2bdbdc 0%, $color-primary-light 100%);
+    @media only screen and (max-width: $bp-small) {
+        height:auto;
+        width:60%;
+        margin-left: 25rem;
+        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+       margin-left:10rem;
+    }
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+        height: 77vh;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+
+
+    }
+
+    &__img {
+        width: 100%;
+        padding: 4rem 10rem 2rem;
+    }
+
+    &__body {
+        color: $color-white;
+
+    }
+
+    &__title {
+        font-size: 2.75rem;
+        font-weight: 600;
+    }
+
+    &__price {
+        font-size: 4.5rem;
+        font-weight: 700;
+        letter-spacing: .4;
+        padding: .13rem 0 .18rem;
+    }
+
+    &__text {}
+
+    &__btn {
+        text-transform: uppercase;
+        color: $color-primary-light;
+        background-color: #fff;
+        font-size: 2.15rem;
+        font-weight: 700;
+        padding: 1.6rem 4.1rem;
+        border-radius: 100px;
+    }
+
+    &__btn:hover {
+        text-decoration: none;
+    }
+}
+
+.list {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+    list-style: none;
+    padding: 2rem 0 3rem 5rem;
+    line-height: 4.4rem;
+}
+
+.price__span {
+    font-weight: 300;
+    font-size: 2.5rem;
+}

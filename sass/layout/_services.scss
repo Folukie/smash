@@ -1,0 +1,78 @@
+.services {
+    background-color: $color-secondary;
+    padding: 13.4rem 0;
+    height: 100vh;
+
+
+
+
+    &__head-grid {
+        padding: 0 15rem;
+        display: flex;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 0 0 0 10rem;
+        }
+        margin-bottom: 0;
+        @media only screen and (max-width: $bp-smallest) {
+            margin-left: 0;
+        }
+
+    }
+}
+
+.grid {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__body {
+        background-color: #fff;
+        margin-left: 3.8rem;
+        padding: 4rem 2rem;
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__title {
+        font-size: 4.4rem;
+        width: 50%;
+        font-weight: 400;
+        transition: color .3s;
+
+    }
+
+    &__title:hover {
+        color: $color-primary-light;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        padding: 2rem 0 2.5rem;
+        color: $color-darker;
+        padding:0;
+        @media only screen and (max-width: $bp-small) {
+            width:60%;
+        }
+    }
+
+    &__button {
+        color: $color-primary-light;
+        text-transform: uppercase;
+        border: none;
+        background-color: $color-white;
+        font-size: 1.9rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+}

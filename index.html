@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Smash clone</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar__brand">
+            <img class="navbar__logo" src="images/logo.svg" alt="Smash logo">
+        </a>
+
+        <div class="">
+            <ul class="navbar__nav ">
+                <li class="navbar__item">
+                    <a href="#carousel" class="navbar__link navbar__active">home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__link">services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#portfolio" class="navbar__link">portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#pricing" class="navbar__link">pricing</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__link">about</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#team" class="navbar__link">team</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__link">contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="navbar__btn btn__inline">Download</button>
+    </nav>
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel__inner">
+            <div class="carousel-item carousel__item">
+                <div class="col-lg-6">
+                    <h1 class="carousel__title">Business is Now Digital</h1>
+                    <p class="carousel__text">We blend insights and strategy to create digital products for
+                        forward-thinking organisations.</p>
+                    <div class="carousel__btn">
+                        <button class="btn btn__get-started">Get started</button>
+                        <button class="btn btn__download">download</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero-1.png" class="d-block w-100 c-img" alt="image">
+                </div>
+            </div>
+            <div class=" carousel-item carousel__item">
+                <div class="col-lg-6">
+                    <h1 class="carousel__title">Crafted for Business </h1>
+                    <p class="carousel__text">We blend insights and strategy to create digital products for
+                        forward-thinking organisations.</p>
+                    <div class="carousel__btn">
+                        <button class="btn btn__get-started">Get started</button>
+                        <button class="btn btn__download">download</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero-2.png" class="d-block w-100 c-img" alt="image">
+                </div>
+            </div>
+            <div class="carousel__item carousel-item">
+                <div class="col-lg-6">
+                    <h1 class="carousel__title">Based on Bootstrap 4</h1>
+                    <p class="carousel__text">We blend insights and strategy to create digital products for
+                        forward-thinking organisations.</p>
+                    <div class="carousel__btn">
+                        <button class="btn btn__get-started">Get started</button>
+                        <button class="btn btn__download">download</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero-3.png" class="d-block w-100 c-img" alt="image">
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous </span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section id="services" class="services">
+        <div class="">
+            <div class="subhead container">
+                <h2 class="subhead__title">Our Services</h2>
+                <p class="subhead__text">Stop wasting time and money designing and managing a website that doesn’t
+                    get results. Happiness guaranteed!</p>
+            </div>
+            <div class="services__head-grid">
+                <div class=" grid__body">
+                    <div class="grid__head">
+                        <h3 class="grid__title">Graphics Design</h3>
+                        <img src="images/shape.svg" alt="shape">
+                    </div>
+
+                    <p class="grid__text">Short description for the ones who look for something new. Short description
+                        for the ones who look for something new.
+                    </p>
+                    <button class="grid__button">learn more</button>
+                </div>
+                <div class=" grid__body">
+                    <div class="grid__head">
+                        <h3 class="grid__title">Website Design</h3>
+                        <img src="images/shape.svg" alt="shape">
+                    </div>
+
+                    <p class="grid__text">Short description for the ones who look for something new. Short description
+                        for the ones who look for something new.
+                    </p>
+                    <button class="grid__button">learn more</button>
+                </div>
+                <div class=" grid__body">
+                    <div class="grid__head">
+                        <h3 class="grid__title">Digital Marketing</h3>
+                        <img src="images/shape.svg" alt="shape">
+                    </div>
+
+                    <p class="grid__text">Short description for the ones who look for something new. Short description
+                        for the ones who look for something new.
+                    </p>
+                    <button class="grid__button">learn more</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="featured ">
+        <div class="subhead  container">
+            <h2 class="subhead__title">Featured works</h2>
+            <p class="subhead__text">Stop wasting time and money designing and managing a website that doesn’t
+                get results. Happiness guaranteed!</p>
+        </div>
+        <div class="row feat-row">
+            <div class="col-lg-4 col-md-4 featured_texts">
+                <ul class="featured__item">
+                    <li class="featured__lists">
+                        <buttton class="featured__button active-feat" href="#">all work</buttton>
+                    </li>
+                    <li class="featured__lists">
+                        <buttton class="featured__button" href="#">branding</buttton>
+                    </li>
+                    <li class="featured__lists">
+                        <buttton class="featured__button" href="#">marketing</buttton>
+                    </li>
+                    <li class="featured__lists">
+                        <buttton class="featured__button" href="#">planning</buttton>
+                    </li>
+                    <li class="featured__lists">
+                        <buttton class="featured__button" href="#">research</buttton>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8 col-md-8 gallery row">
+                <figure class="gallery__item gallery__item-1">
+                    <img src="images/img-1.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-2">
+                    <img src="images/img-2.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-3">
+                    <img src="images/img-3.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-4">
+                    <img src="images/img-4.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-5">
+                    <img src="images/img-5.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-6">
+                    <img src="images/img-6.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-7">
+                    <img src="images/img-7.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-8">
+                    <img src="images/img-8.png" alt="gallery image" class="gallery_img">
+                </figure>
+                <figure class="gallery__item gallery__item-9">
+                    <img src="images/img-1.png" alt="gallery image" class="gallery_img">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="subhead  container">
+            <h2 class="subhead__title">Pricing plans</h2>
+            <p class="subhead__text">Stop wasting time and money designing and managing a website that doesn’t
+                get results. Happiness guaranteed!</p>
+        </div>
+        <div class=" card-row pricing__row">
+            <div class="card pricing__card">
+                <img src="images/card-img1.svg" class="card-img pricing__img" alt="pricing image">
+                <div class="card-body pricing__body">
+                    <h5 class="card-title pricing__title">Basic</h5>
+                    <h4 class="card-price pricing__price">$ 199<span class="price__span">/month</span></h4>
+                    <p class="card-text pricing__text">
+                        <ul class="list">
+                            <li class="list-1">Carefully crafted components</li>
+                            <li class="list-2">Amazing page examples</li>
+                        </ul>
+                    </p>
+                    <a href="#" class=" card-btn pricing__btn">Get started</a>
+                </div>
+            </div>
+            <div class="card pricing__card">
+                <img src="images/card-img2.svg" class="card-img pricing__img" alt="pricing image">
+                <div class="card-body pricing__body">
+                    <h5 class="card-title pricing__title">Pro</h5>
+                    <h4 class="card-price pricing__price">$ 399<span class="price__span">/month</span></h4>
+                    <p class="card-text pricing__text">
+                        <ul class="list">
+                            <li class="list-1">Carefully crafted components</li>
+                            <li class="list-2">Amazing page examples</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="card-btn pricing__btn">Get started</a>
+                </div>
+            </div>
+            <div class="card pricing__card">
+                <img src="images/card-img3.svg" class="card-img pricing__img" alt="pricing image">
+                <div class="card-body pricing__body">
+                    <h5 class="card-title pricing__title">Enterprise</h5>
+                    <h4 class="card-price pricing__price">$ 699<span class="price__span">/month</span></h4>
+                    <p class="card-text pricing__text">
+                        <ul class="list">
+                            <li class="list-1">Carefully crafted components</li>
+                            <li class="list-2">Amazing page examples</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="card-btn pricing__btn">Get started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="questions">
+        <div class="questions__grid">
+            <div class="questions__section">
+                <h4 class="questions__head-1">a little more about us</h4>
+                <h3 class="questions__head-2">Frequently Asked Questions
+                    About Our Site
+                </h3>
+                <div class="questions__text questions__side">
+                    <h5 class="questions__text-head">Frequently Asked Question One</h5>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <p class="questions__text-pgraph">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
+                                nulla,
+                                lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
+                                felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__text questions__side">
+                    <h5 class="questions__text-head">Frequently Asked Question Two</h5>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <p class="questions__text-pgraph">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
+                                nulla,
+                                lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
+                                felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__text questions__side">
+                    <h5 class="questions__text-head">Frequently Asked Question Three</h5>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <p class="questions__text-pgraph">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
+                                nulla,
+                                lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
+                                felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__text questions__side">
+                    <h5 class="questions__text-head">Frequently Asked Question Four</h5>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <p class="questions__text-pgraph">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
+                                nulla,
+                                lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
+                                felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__text questions__side">
+                    <h5 class="questions__text-head">Frequently Asked Question Five</h5>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <p class="questions__text-pgraph">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
+                                nulla,
+                                lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
+                                felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="questions__image">
+                <img src="images/hero--1.jpg" class="questions__img" alt="image">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="testimonials">
+        <div class="testimonials__section">
+            <div class="testimonials__text">
+                <h4 class="questions__head-1">testimonials</h4>
+                <h3 class="questions__head-2 testimonials__head">what client says about us</h3>
+                <div class="line">
+                    <hr class="line-1">
+                    <hr class="line-2">
+                    <hr class="line-3">
+                    <hr class="line-4">
+                </div>
+                <p class="testimonials__client">Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad
+                    litora torquent per conubia
+                    nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum.<br><br>
+                    ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit
+                    interdum.
+                </p>
+                <div class="arrow row">
+                    <div class="arrow__1"><i class="fa fa-3x fa-long-arrow-left" aria-hidden="true"></i></div>
+                    <div class="arrow__2"><i class="fa fa-3x fa-long-arrow-right" aria-hidden="true"></i></div>
+                </div>
+            </div>
+            <div class="author">
+                <div>
+                    <p class="author__text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl,
+                        sit amet convallis nunc turp.”</p>
+                    <hr class="author__hr">
+                    <div class=" author__profile">
+                        <img src="images/author-1.jpg" alt="author 1" class="author__img">
+                        <div class="author__name">
+                            <div class="author__names">Mr Jems Bond</div>
+                            <div class="author__company">CEO Mbuild Firm</div>
+                        </div>
+                        <div class="author__review">
+                            <div class="author__stars">
+                            ⭐⭐⭐⭐⭐
+                            </div>
+                            <div class="author__reviews">
+                                (7 Reviews)
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <p class="author__text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat
+                            nisl, sit amet convallis nunc turp.”</p>
+                        <hr class="author__hr">
+                        <div class="row author__profile">
+                            <img src="images/author-2.jpg" alt="author 2" class="author__img">
+                            <div class="author__name">
+                                <div class="author__names">Mr Jems Bond</div>
+                                <div class="author__company">CEO Mbuild Firm</div>
+                            </div>
+                            <div class="author__stars">
+                                <div class="author__stars">
+                            ⭐⭐⭐⭐⭐
+                            </div>
+                                <div class="author__reviews">
+                                    (7 Reviews)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="author__text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat
+                            nisl, sit amet convallis nunc turp.”</p>
+                        <hr class="author__hr">
+                        <div class="row author__profile">
+                            <img src="images/author-3.jpg" alt="author 3" class="author__img">
+                            <div class="author__name">
+                                <div class="author__names">Mr Jems Bond</div>
+                                <div class="author__company">CEO Mbuild Firm</div>
+                            </div>
+                            <div class="author__stars">
+                                <div class="author__stars">
+                            ⭐⭐⭐⭐⭐
+                            </div>
+                                <div class="author__reviews">
+                                    (7 Reviews)
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div> -->
+                </div>
+    </section>
+
+    <section id="team" class="team ">
+        <div class="subhead container">
+            <h2 class="subhead__title">Meet the team</h2>
+            <p class="subhead__text">Stop wasting time and money designing and managing a website that doesn’t
+                get results. Happiness guaranteed!</p>
+        </div>
+        <div class="team__members row ">
+
+            <div class="team__card col-lg-4 ">
+                <img src="images/team-1.jpg" class="team__img" alt="">
+                <div class=" team__body">
+                    <div class="social ">
+                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="team__title">Jeffery Riley</h3>
+                    <p class="team__text">Art Director</p>
+                </div>
+            </div>
+            <div class=" team__card col-lg-4">
+                <img src="images/team-2.jpg" class=" team__img" alt="">
+                <div class="team__body">
+                    <div class="social">
+                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="team__title">Riley Beata</h3>
+                    <p class=" team__text">Web Developer</p>
+                </div>
+            </div>
+            <div class="team__card col-lg-4">
+                <img src="images/team-3.jpg" class="team__img" alt="">
+                <div class="team__body">
+                    <div class="social ">
+                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="team__title">Mark A. Parker</h3>
+                    <p class=" team__text">UX Designer</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="subhead container">
+            <h2 class="subhead__title">Contact</h2>
+            <p class="subhead__text">Stop wasting time and money designing and managing a website that doesn’t
+                get results. Happiness guaranteed!</p>
+        </div>
+        <div class="contact__row row ">
+            <div class="location row col-lg-4 col-md-6">
+                <div class="location__icon-1 mr-4"><i class="fa icon--1 fa-3x fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <h4 class="location__text">
+                    Elizabeth St, Melbourne <br>1202 Australia.
+                </h4>
+
+            </div>
+            <div class="location row col-lg-4 col-md-6">
+                <div class="location__icon-2 mr-4"><i class="fa icon--2 fa-3x fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <h4 class="location__text">hello@ayroui.com <br> support@uideck.com</h4>
+            </div>
+            <div class="location row col-lg-4 col-md-6">
+                <div class="location__icon-3 mr-4"><i class="fa icon--3 fa-3x fa-phone" aria-hidden="true"></i></div>
+                <h4 class="location__text">+333 789-321-654<br>+333 985-458-609</h4>
+            </div>
+        </div>
+        <div class="message">
+            <div class="row">
+                <i class="fa fa-4x mr-3 fa-envelope-o" aria-hidden="true"></i>
+                <h1 class="message__head"> <strong>leave</strong> a message.</h1>
+            </div>
+            <form action="action_page.php" class="message__form row">
+
+                <label for="name" class="message__box-head__1 col-lg-6">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name " class="mr-5 box message__mail">
+
+                <label for="email" class="message__box-head__2 col-lg-6 ">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" class="box message__mail">
+
+                <label for="subject" class="message__box-head__3">Message</label>
+                <textarea id="subject" name="subject" placeholder="Message" class="box message__box"></textarea>
+            </form>
+            <button class="message__btn">send message</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="images/logo.svg" alt="footer logo" class="footer__logo">
+
+        <div class="row footer__icons">
+            <i class="fa fa-3x mr-4 fa-facebook footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-3x mr-4 fa-twitter footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-3x mr-4 fa-instagram footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-3x  fa-linkedin-square footer__icon" aria-hidden="true"></i>
+        </div>
+        <p class="footer__text">+2348132693859 <br> support@uideck.com</p>
+        <p class="footer__end">
+            Designed by <span class="footer__span">UIdeck </span> and Built-with <span class="footer__span">Ayro
+                UI</span>
+            Cloned by
+            <span class="footer__span">Foluke Odusanya</span>
+        </p>
+
+    </footer>
+</body>
+
+</html>

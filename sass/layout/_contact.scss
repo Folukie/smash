@@ -1,0 +1,140 @@
+.contact {
+    padding: 15rem 5rem 10rem;
+    background-attachment: $color-primary-light;
+
+    &__row {
+        padding-left: 15rem;
+    }
+}
+
+.location {
+
+    &__text {
+        font-size: 2.1rem;
+        font-weight: 400;
+        color: $color-darker;
+    }
+
+}
+
+.icon--1 {
+    background-color: black;
+    border-radius: 50px;
+    padding: 1.3rem 1.9rem;
+    color: white;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 4rem;
+    }
+}
+
+.icon--2 {
+    background-color: rgb(252, 56, 50);
+    border-radius: 50px;
+    padding: 1.3rem 1.4rem;
+    color: white;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 4rem;
+    }
+}
+
+.icon--3 {
+    background-color: $color-primary-light;
+    border-radius: 50px;
+    padding: 1.3rem 1.6rem;
+    color: white;
+}
+
+.message {
+    padding: 15rem;
+
+    &__head {
+        font-size: 3.9rem;
+        text-transform: capitalize;
+    }
+
+    &__form {
+        position: relative;
+        color: $color-dark;
+        font-size: 1.5rem;
+        margin-top: 8rem;
+
+    }
+
+    &__mail {
+        width: 44.8%;
+        height: 6rem;
+        border: .3rem solid $border;
+        border-radius: .7rem;
+        @media only screen and (max-width: $bp-small) {
+            width:90%;
+            margin-bottom: 4rem;
+         }
+    }
+
+    &__box-head {
+
+        &__1 {
+            position: absolute;
+            top: -2.8rem;
+            left: -1.6rem;
+
+        }
+
+        &__2 {
+            position: absolute;
+            top: -2.8rem;
+            left: 60.4rem;
+        @media only screen and (max-width: $bp-small) {
+            top: 8rem;
+            left: -1.6rem;
+
+        }
+        }
+
+        &__3 {
+            position: absolute;
+            top: 14rem;
+            left: 0;
+            @media only screen and (max-width: $bp-small) {
+                top: 20rem;
+                left: 2rem;
+
+            }
+        }
+
+
+    }
+
+    &__box {
+        width: 92%;
+        height: 17rem;
+        margin: 7rem 0 3rem;
+        border: .3rem solid $border;
+        border-radius: .7rem;
+        @media only screen and (max-width: $bp-small) {
+        margin: 3rem 0 3rem;
+           
+        }
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        color: white;
+        background-color: $color-primary-light;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1.6rem 4rem;
+        border-radius: 4px;
+        border: none;
+        margin-left: -1.5rem;
+
+    }
+
+}
+
+::placeholder {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
