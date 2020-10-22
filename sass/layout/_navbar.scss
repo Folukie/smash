@@ -1,75 +1,89 @@
 .navbar {
-    background-color: $color-primary;
-    text-transform: uppercase;
-    font-size: 2rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 10rem;
+  position: fixed;
+  z-index: 99;
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem 6rem 2rem 2rem ;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 7rem;
+    @media only screen and (max-width: $bp-small) {
+       width:9rem;
+      }
+  }
+
+  &__nav {
+    list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    padding: 1.5rem 10rem;
-    position: fixed;
-    z-index: 99;
-   
+    margin-bottom: 0;
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+  }
 
-    &__logo {
-        width: 7.5rem;
-    }
+  &__item {
+    margin: 0 2rem;
+    font-weight: 600;
+    position: relative;
+  }
 
-    &__nav {
-        list-style: none;
-        display: flex;
-        margin-bottom: 0;
-    }
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    opacity: 0.8;
+  }
 
-    &__item {
-        margin: 0 2rem;
-        font-weight: 600;
-        position: relative;
+  &__link:hover,
+  &__active {
+    opacity: 1;
+    color: $color-white;
+    text-decoration: none;
+  }
 
-    }
+  &__link::before {
+    content: "";
+    width: 3.5rem;
+    left: .4rem;
+    height: 0.4rem;
+    background-image: linear-gradient(
+      to right,
+      ($color-primary) 0%,
+      ($color-white) 100%
+    );
+    position: absolute;
+    bottom: -1.3rem;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s;
+  }
 
-    &__link {
-        text-decoration: none;
-        color: $color-white;
-        opacity: 0.8;
-    }
+  &__link:hover::before,
+  &__active:before {
+    transform: scaleX(1);
+  }
 
-    &__link:hover,
-    &__active {
-        opacity: 1;
-        color: $color-white;
-        text-decoration: none;
-
-    }
-
-    &__link::before {
-        content: "";
-        width: 5.5rem;
-        height: .6rem;
-        background-image: linear-gradient(to right, ($color-primary) 0%, ($color-white) 100%);
-        position: absolute;
-        bottom: -1.2rem;
-        left: .5rem;
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform .4s;
-    }
-
-    &__link:hover::before,
-    &__active:before {
-        transform: scaleX(1);
-
-    }
-
-    &__btn {
-        height: 6rem;
-        width: 16.5rem;
-        background-color: $color-white;
-        color: $color-primary;
-        border: none;
-        text-transform: uppercase;
-        font-size: 2rem;
-        border-radius: 0.4rem;
-        font-weight: 700;
-    }
+  &__btn {
+    height: 4.8rem;
+    width: 14rem;
+    background-color: $color-white;
+    color: $color-primary;
+    border: 0.2rem solid white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+  &__btn:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
 }

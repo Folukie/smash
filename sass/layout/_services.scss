@@ -2,6 +2,9 @@
     background-color: $color-secondary;
     padding: 13.4rem 0;
     height: 100vh;
+    @media only screen and (max-width: $bp-small) {
+        height:180vh;
+      }
 
 
 
@@ -11,16 +14,14 @@
         display: flex;
 
         @media only screen and (max-width: $bp-largest) {
-            padding: 0;
+            padding: 0 2rem 0 0;
         }
 
         @media only screen and (max-width: $bp-small) {
             display: grid;
             grid-template-columns: 1fr;
-            width: 80%;
-            margin: 0 0 0 10rem;
+            width: 100%;
         }
-        margin-bottom: 0;
         @media only screen and (max-width: $bp-smallest) {
             margin-left: 0;
         }
@@ -44,11 +45,13 @@
     }
 
     &__title {
-        font-size: 4.4rem;
+        font-size: 3.6rem;
         width: 50%;
         font-weight: 400;
         transition: color .3s;
-
+        @media only screen and (max-width: $bp-small) {
+            width:80%;
+          }
     }
 
     &__title:hover {
@@ -57,12 +60,15 @@
     }
 
     &__text {
-        font-size: 1.8rem;
-        padding: 2rem 0 2.5rem;
+        font-size: 1.4rem;
+        padding: 2rem 0 2.7rem;
         color: $color-darker;
         padding:0;
         @media only screen and (max-width: $bp-small) {
-            width:60%;
+            width:100%;
+            padding:2rem 0;
+            line-height: 1.6;
+            font-size: 1.8rem;
         }
     }
 
@@ -71,8 +77,11 @@
         text-transform: uppercase;
         border: none;
         background-color: $color-white;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        padding-bottom: 2rem;
+        padding-bottom: 1.6rem;
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.9rem;
+        }
     }
 }

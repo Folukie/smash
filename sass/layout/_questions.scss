@@ -1,5 +1,8 @@
 .questions {
     padding: 15rem 0 10rem 15rem;
+    @media only screen and (max-width: $bp-large) {
+        padding:10rem 2rem;
+    }
     &__grid{
         display:flex;
         @media only screen and (max-width: $bp-large) {
@@ -8,7 +11,6 @@
         }
     }
     &__image {
-        width: 100%;
         padding-left: 10rem;
         @media only screen and (max-width: $bp-large) {
             padding:0
@@ -29,7 +31,7 @@
     }
 
     &__head-1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         color: $color-primary-light;
         text-transform: uppercase;
         padding-left: 3rem 0;
@@ -37,25 +39,23 @@
     }
 
     &__head-2 {
-        font-size: 3.9rem;
+        font-size: 2.9rem;
         text-transform: capitalize;
-        padding: .7rem 0;
-        width: 120%;
+        padding: 1rem 0;
         font-weight: 600;
         @media only screen and (max-width: $bp-small) {
-          width:45%;
+          width:90% !important;
         }
     }
 
     &__text {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-transform: capitalize;
-        padding-left: 3rem;
-       
+        
     }
 
     &__text-head {
-        font-size: 2.17rem;
+        font-size: 1.8rem;
         font-weight: 500;
         margin-top: 4rem;
         font-weight: 600;
@@ -102,3 +102,4 @@
     background-color: #fff;
     transform: translateY(5rem);
 }
+

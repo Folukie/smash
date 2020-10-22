@@ -14,101 +14,104 @@
 
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="navbar__brand">
-            <img class="navbar__logo" src="images/logo.svg" alt="Smash logo">
-        </a>
-
-        <div class="">
-            <ul class="navbar__nav ">
-                <li class="navbar__item">
-                    <a href="#carousel" class="navbar__link navbar__active">home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#services" class="navbar__link">services</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#portfolio" class="navbar__link">portfolio</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#pricing" class="navbar__link">pricing</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__link">about</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#team" class="navbar__link">team</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#contact" class="navbar__link">contact</a>
-                </li>
-            </ul>
+    <div class="headnav">
+        <nav class="navbar">
+            <a href="#" class="navbar__brand">
+                <img class="navbar__logo" src="images/logo.svg" alt="Smash logo">
+            </a>
+    
+            <div class="">
+                <ul class="navbar__nav ">
+                    <li class="navbar__item">
+                        <a href="#carousel" class="navbar__link navbar__active">home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#services" class="navbar__link">services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#portfolio" class="navbar__link">portfolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#pricing" class="navbar__link">pricing</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link">about</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#team" class="navbar__link">team</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__link">contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <button class="navbar__btn btn__inline">Download</button>
+        </nav>
+    
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+    
+            <div class="carousel__inner">
+                <!-- <div class="carousel-item carousel__item">
+                    <div class="col-lg-6">
+                        <h1 class="carousel__title">Business is Now Digital</h1>
+                        <p class="carousel__text">We blend insights and strategy to create digital products for
+                            forward-thinking organisations.</p>
+                        <div class="carousel__btn">
+                            <button class="btn btn__get-started">Get started</button>
+                            <button class="btn btn__download">download</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/hero-1.png" class="d-block w-100 c-img" alt="image">
+                    </div>
+                </div>
+                <div class=" carousel-item carousel__item">
+                    <div class="col-lg-6">
+                        <h1 class="carousel__title">Crafted for Business </h1>
+                        <p class="carousel__text">We blend insights and strategy to create digital products for
+                            forward-thinking organisations.</p>
+                        <div class="carousel__btn">
+                            <button class="btn btn__get-started">Get started</button>
+                            <button class="btn btn__download">download</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/hero-2.png" class="d-block w-100 c-img" alt="image">
+                    </div>
+                </div> -->
+                <div class="carousel__item carousel-item">
+                    <div class="col-lg-6 col-sm-12" >
+                        <h1 class="carousel__title">Based on Bootstrap 4</h1>
+                        <p class="carousel__text">We blend insights and strategy to create digital products for
+                            forward-thinking organisations.</p>
+                        <div class="carousel__btn">
+                            <button class="btn btn__get-started">Get started</button>
+                            <button class="btn btn__download">download</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/hero-3.png" class="d-block w-100 c-img" alt="image">
+                    </div>
+                </div>
+    
+            </div>
+            <a class="carousel-control-prev carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
-        <button class="navbar__btn btn__inline">Download</button>
-    </nav>
-
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel__inner">
-            <div class="carousel-item carousel__item">
-                <div class="col-lg-6">
-                    <h1 class="carousel__title">Business is Now Digital</h1>
-                    <p class="carousel__text">We blend insights and strategy to create digital products for
-                        forward-thinking organisations.</p>
-                    <div class="carousel__btn">
-                        <button class="btn btn__get-started">Get started</button>
-                        <button class="btn btn__download">download</button>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/hero-1.png" class="d-block w-100 c-img" alt="image">
-                </div>
-            </div>
-            <div class=" carousel-item carousel__item">
-                <div class="col-lg-6">
-                    <h1 class="carousel__title">Crafted for Business </h1>
-                    <p class="carousel__text">We blend insights and strategy to create digital products for
-                        forward-thinking organisations.</p>
-                    <div class="carousel__btn">
-                        <button class="btn btn__get-started">Get started</button>
-                        <button class="btn btn__download">download</button>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/hero-2.png" class="d-block w-100 c-img" alt="image">
-                </div>
-            </div>
-            <div class="carousel__item carousel-item">
-                <div class="col-lg-6">
-                    <h1 class="carousel__title">Based on Bootstrap 4</h1>
-                    <p class="carousel__text">We blend insights and strategy to create digital products for
-                        forward-thinking organisations.</p>
-                    <div class="carousel__btn">
-                        <button class="btn btn__get-started">Get started</button>
-                        <button class="btn btn__download">download</button>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/hero-3.png" class="d-block w-100 c-img" alt="image">
-                </div>
-            </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous </span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
+   
 
     <section id="services" class="services">
         <div class="">
@@ -296,6 +299,7 @@
                                 lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia
                                 felis.
                             </p>
+
                         </div>
                     </div>
                 </div>
@@ -364,8 +368,8 @@
                     interdum.
                 </p>
                 <div class="arrow row">
-                    <div class="arrow__1"><i class="fa fa-3x fa-long-arrow-left" aria-hidden="true"></i></div>
-                    <div class="arrow__2"><i class="fa fa-3x fa-long-arrow-right" aria-hidden="true"></i></div>
+                    <div class="arrow__1 arrows">&larr;</div>
+                    <div class="arrow__2 arrows">&rarr;</div>
                 </div>
             </div>
             <div class="author">
@@ -448,10 +452,10 @@
                 <img src="images/team-1.jpg" class="team__img" alt="">
                 <div class=" team__body">
                     <div class="social ">
-                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-instagram social__fa" aria-hidden="true"></i>
                     </div>
                     <h3 class="team__title">Jeffery Riley</h3>
                     <p class="team__text">Art Director</p>
@@ -461,10 +465,10 @@
                 <img src="images/team-2.jpg" class=" team__img" alt="">
                 <div class="team__body">
                     <div class="social">
-                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-instagram social__fa" aria-hidden="true"></i>
                     </div>
                     <h3 class="team__title">Riley Beata</h3>
                     <p class=" team__text">Web Developer</p>
@@ -474,10 +478,10 @@
                 <img src="images/team-3.jpg" class="team__img" alt="">
                 <div class="team__body">
                     <div class="social ">
-                        <i class="fa fa-2x fa-facebook social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-twitter social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-linkedin-square social__fa" aria-hidden="true"></i>
-                        <i class="fa fa-2x fa-instagram social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-facebook social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-twitter social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square social__fa" aria-hidden="true"></i>
+                        <i class="fa fa-instagram social__fa" aria-hidden="true"></i>
                     </div>
                     <h3 class="team__title">Mark A. Parker</h3>
                     <p class=" team__text">UX Designer</p>
@@ -496,7 +500,7 @@
         </div>
         <div class="contact__row row ">
             <div class="location row col-lg-4 col-md-6">
-                <div class="location__icon-1 mr-4"><i class="fa icon--1 fa-3x fa-map-marker" aria-hidden="true"></i>
+                <div class="location__icon-1 mr-4"><i class="fa icon--1 loc-ico fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <h4 class="location__text">
                     Elizabeth St, Melbourne <br>1202 Australia.
@@ -504,18 +508,18 @@
 
             </div>
             <div class="location row col-lg-4 col-md-6">
-                <div class="location__icon-2 mr-4"><i class="fa icon--2 fa-3x fa-envelope-o" aria-hidden="true"></i>
+                <div class="location__icon-2 mr-4"><i class="fa icon--2 loc-ico fa-envelope-o" aria-hidden="true"></i>
                 </div>
                 <h4 class="location__text">hello@ayroui.com <br> support@uideck.com</h4>
             </div>
             <div class="location row col-lg-4 col-md-6">
-                <div class="location__icon-3 mr-4"><i class="fa icon--3 fa-3x fa-phone" aria-hidden="true"></i></div>
+                <div class="location__icon-3 mr-4"><i class="fa icon--3 loc-ico fa-phone" aria-hidden="true"></i></div>
                 <h4 class="location__text">+333 789-321-654<br>+333 985-458-609</h4>
             </div>
         </div>
         <div class="message">
             <div class="row">
-                <i class="fa fa-4x mr-3 fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-2x mr-3 fa-envelope-o" aria-hidden="true"></i>
                 <h1 class="message__head"> <strong>leave</strong> a message.</h1>
             </div>
             <form action="action_page.php" class="message__form row">

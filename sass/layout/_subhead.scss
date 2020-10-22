@@ -2,18 +2,22 @@
     text-align: center;
 
     &__title {
-        font-size: 5.4rem;
+        font-size: 4.4rem;
         color: $color-darker;
         font-weight: 600;
         text-transform: capitalize;
     }
 
     &__text {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
         padding: 2.3rem 22rem 5rem;
         line-height: 2.8rem;
         color: $color-dark;
+        @media only screen and (max-width: $bp-small) {
+           padding:2rem ;
+           font-size: 2rem;
+          }
        
     }
 }

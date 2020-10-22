@@ -8,16 +8,21 @@
         margin-top: 1rem;
 
         &:not(:last-child) {
-            margin-bottom: 3.3rem;
+            margin-bottom: 3rem;
         }
     }
 
     &__button {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: $color-dark;
         text-transform: uppercase;
-        transition: all 0.2s;
+        transition: color .1s, background-image 4s ease-out;
+        padding: 1.2rem 9rem;
+        border-radius: 100px;
+        @media only screen and (max-width: $bp-small) {
+            padding:1.7rem 18rem;
+           }
     }
 
     &__button:hover,
@@ -26,8 +31,6 @@
         background-image: linear-gradient(to right,
                 rgb(0, 103, 244) 0%,
                 rgb(43, 219, 220) 100%);
-        border-radius: 100px;
-        padding: 1.6rem 10rem;
     }
 }
 
@@ -41,7 +44,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-        grid-template-columns: max-content;
+        display:block;
         margin-top: 4rem;
     }
 
@@ -49,16 +52,16 @@
     &__item {
         margin-bottom: 0;
         @media only screen and (max-width: $bp-small) {
-            margin-left: 28rem;
+            margin-left: 0;
         }
-        @media only screen and (max-width: $bp-small) {
-            margin-left: 8rem;
-        }
+       
 
     }
 
     &__img {
         width: 100%;
+        
+         
     }
 }
 
@@ -66,4 +69,8 @@
     margin-right: 0;
     margin-left: 0;
     padding-left: 4rem;
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 0;
+    }
+   
 }
